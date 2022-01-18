@@ -1,0 +1,29 @@
+GET http://localhost:3000/users
+
+
+
+###
+POST http://localhost:3000/create-user
+Content-Type: application/json
+
+{
+    "name": "chandra",
+    "password": "Password"
+}
+
+###
+
+POST http://localhost:3000/login-user
+Content-Type: application/json
+
+{
+    "name": "chandra",
+    "password": "Password"
+}
+
+###
+
+
+
+GET http://localhost:3000/validate-user 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiY2hhbmRyYSIsImlhdCI6MTY0MjUxMjA4NH0.ZdhKg-o4EpvFWG_Z7l9k-xd1pyI8gwgB8oTZIMIBVY0
